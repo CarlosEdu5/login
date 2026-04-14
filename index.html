@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <img src="imagens/fundoazul.jpg" id="fundoazul" alt="Fundo azul" />
+        <div class="left-text">
+          <h2>Bem Vindo!</h2>
+          <p>
+            Esta é a página de login<br />com validação de usuário e senha.
+          </p>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <h1 style="color: #003366;">Login</h1>
+        <form id="forms">
+          <input type="text" placeholder="Email" id="email"/>
+          <input type="password" placeholder="Senha" id="senha" />
+          <div id="lembrar">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Lembrar senha</label>
+          </div>
+          <button type="submit" id="botao">Login</button>
+          <a href="#" id="esqueci">Esqueci minha senha</a>
+          <button type="button" id="cadastro">Cadastre-se</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

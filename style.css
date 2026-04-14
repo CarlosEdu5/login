@@ -1,0 +1,194 @@
+body {
+  font-family: 'MODERNIZ';
+  background: linear-gradient(
+    to bottom,
+    #001c5f,
+    #003366,
+    #004080,
+    #0059b3,
+    #0073e6,
+    #0080ff,
+    #3399ff,
+    #66b3ff,
+    #99ccff,
+    #cce5ff
+  );
+   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+    font-family: 'MODERNIZ';
+    src: url('fonts/MODERNIZ.woff2') format('woff2'),
+        url('fonts/MODERNIZ.woff') format('woff'),
+        url('fonts/MODERNIZ.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 600px;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-panel,
+.right-panel {
+  width: 50%;
+  position: relative;
+}
+
+.left-panel {
+  min-height: 100%;
+}
+
+#fundoazul {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-text {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  z-index: 2;
+}
+
+.left-text h2 {
+  font-family: 'MODERNIZ', sans-serif;
+  font-size: 45px;
+  margin: 0 0 10px;
+  position: relative;
+  left: -15px;
+}
+
+.left-text p {
+  font-family: monospace, 'Lucida Console', 'Courier New';
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+  left: -15px;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 40px;
+}
+
+#forms {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#email,
+#senha {
+  width: 93%;
+  padding: 12px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #003366;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#botao,
+#cadastro {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+#botao {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+}
+
+#cadastro {
+  background-color: transparent;
+  color: #003366;
+  border: 2px solid #003366;
+}
+
+#lembrar {
+  font-family: monospace, 'Lucida Console', 'Courier New';
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#esqueci {
+  font-family: monospace, 'Lucida Console', 'Courier New';
+  color: #003366;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#esqueci:hover {
+  text-decoration: underline;
+}
+
+
+#botao {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#botao:hover {
+  background-color: #002244;
+}
+
+#lembrar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#esqueci {
+  color: #003366;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+#cadastro {
+  background-color: #ffffff;
+  color: #003366;
+  border: 1px solid #003366;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cadastro:hover {
+  background-color: #d6d6d6;
+  color: #ffffff;
+  border: 1px solid #003366;
+}
